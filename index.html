@@ -2,14 +2,75 @@
 <html lang="ms">
 <head>
     <meta charset="UTF-8">
-    <title>Laman Utama</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laman Utama - Pembelajaran Anak-anak</title>
     <style>
-        body { font-family: Arial; text-align: center; padding: 50px; background: #ffe08a; }
-        a { background: #f59e0b; color: white; padding: 15px 30px; text-decoration: none; border-radius: 40px; font-size: 1.2rem; }
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffe08a;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 25px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #d97706;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .btn-link {
+            display: inline-block;
+            background: #f59e0b;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: 0.2s;
+            margin-top: 10px;
+        }
+
+        .btn-link:hover {
+            background: #b45309;
+            transform: scale(1.03);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .btn-link {
+                padding: 12px 20px;
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
+
+<div class="container">
     <h1>🍎 Selamat Datang</h1>
-    <a href="/learning/">Klik untuk ke Laman Pembelajaran</a>
+    <div class="subtitle">
+        Laman pembelajaran untuk anak-anak
+    </div>
+    <a href="/learning/" class="btn-link">📚 Klik untuk ke Laman Pembelajaran</a>
+</div>
+
 </body>
 </html>
